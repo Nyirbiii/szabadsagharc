@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Screen</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            color: #fff; 
+        }
+
+        
+
+        .text-container {
+            width: 50%; 
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ffffff; 
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555; 
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 44px 80px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            background-color: #555; 
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #a5a5a5;
+            transform: scale(1.1); 
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+        }
+
+        .btn:active {
+            transform: scale(0.98); 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .landing-container {
+                flex-direction: column; 
+                text-align: center;
+                padding: 20px;
+            }
+
+            .text-container {
+                width: 100%; 
+                margin-bottom: 20px;
+            }
+
+            .btn-container {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="text-container">
+            <h1>Üdvözlünk! <h3>(Madarász István King)</h3></h1>
+            <p>Válassz az alábbi opciók közül:</p>
+        </div>
+
+        <div class="btn-container">
+            <a href="index.html" class="btn" target="_blank">Esszé</a>
+            <a href="https://www.weboldal2.com" class="btn" target="_blank">Galéria</a>
+        </div>
+    
+</body>
+</html>
